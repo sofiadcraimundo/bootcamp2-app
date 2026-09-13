@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buscador de Receitas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>🍳 Buscador de Receitas</h1>
+    <p>Digite o nome de um prato e descubra como fazê-lo</p>
+  </header>
+
+  <main>
+    <div class="busca">
+      <input
+        type="text"
+        id="campo-busca"
+        placeholder="Ex: chicken, pasta, cake..."
+        autocomplete="off"
+      >
+      <button id="botao-buscar">Buscar</button>
+    </div>
+
+    <div id="resultado" class="resultado">
+      <p class="dica">Experimente buscar por "chicken", "pasta" ou "cake" 🍝</p>
+    </div>
+  </main>
+
+  <footer>
+    <p>Dados fornecidos por <a href="https://www.themealdb.com/" target="_blank">TheMealDB</a></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
