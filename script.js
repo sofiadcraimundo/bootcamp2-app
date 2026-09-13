@@ -1,4 +1,5 @@
 // script.js
+// // Ajuste de tratamento de erros
 // Consome a API pública TheMealDB (não exige chave/autenticação)
 
 const campoBusca = document.getElementById("campo-busca");
