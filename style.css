@@ -1,0 +1,184 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: linear-gradient(135deg, #fff7ed, #ffe8d6);
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+header h1 {
+  font-size: 1.8rem;
+  color: #d9480f;
+  margin-bottom: 6px;
+}
+
+header p {
+  color: #777;
+  font-size: 0.95rem;
+}
+
+main {
+  width: 100%;
+  max-width: 480px;
+}
+
+.busca {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+#campo-busca {
+  flex: 1;
+  padding: 12px 14px;
+  border: 2px solid #f3c9a3;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+#campo-busca:focus {
+  border-color: #d9480f;
+}
+
+#botao-buscar {
+  padding: 12px 18px;
+  background: #d9480f;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+#botao-buscar:active {
+  background: #b8380c;
+}
+
+.resultado {
+  width: 100%;
+}
+
+.dica {
+  text-align: center;
+  color: #999;
+  font-style: italic;
+  padding: 20px;
+}
+
+.carregando {
+  text-align: center;
+  color: #d9480f;
+  padding: 20px;
+  font-weight: bold;
+}
+
+.erro {
+  text-align: center;
+  background: #ffe3e3;
+  color: #c92a2a;
+  padding: 16px;
+  border-radius: 8px;
+  font-weight: 500;
+}
+
+.card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+  animation: fadeIn 0.3s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.card img {
+  width: 100%;
+  display: block;
+}
+
+.card-conteudo {
+  padding: 16px;
+}
+
+.card-conteudo h2 {
+  color: #d9480f;
+  margin-bottom: 8px;
+  font-size: 1.3rem;
+}
+
+.tags {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 12px;
+  flex-wrap: wrap;
+}
+
+.tag {
+  background: #ffe8d6;
+  color: #d9480f;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.card-conteudo h3 {
+  font-size: 1rem;
+  margin: 12px 0 6px;
+  color: #444;
+}
+
+.ingredientes {
+  list-style: none;
+  columns: 2;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.instrucoes {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: #555;
+  max-height: 150px;
+  overflow-y: auto;
+}
+
+.video-link {
+  display: inline-block;
+  margin-top: 12px;
+  color: #d9480f;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+footer {
+  margin-top: 30px;
+  color: #999;
+  font-size: 0.85rem;
+  text-align: center;
+}
+
+footer a {
+  color: #d9480f;
+}
